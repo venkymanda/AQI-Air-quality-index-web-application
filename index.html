@@ -1,0 +1,28 @@
+<html><head>
+<meta charset="ISO-8859-1">
+<title>Welcome to REAL TIME AQI STATUS</title>
+
+</head>
+<body>
+
+<center>
+    <img src="/aqi chart.png" alt="Mountain View" style="width:304px;height:228px;">
+</center>
+<center>
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~venkyharan/2"></iframe>
+</center>
+
+
+
+<center>
+<marquee behavior="scroll" bgcolor="yellow" loop="-1" width="30%"><i><font color="blue"><strong>Last Updated at :<span id="time"></span></strong>  </font></i></marquee> 
+
+<script>
+
+var today = new Date();
+ document.getElementById("time").innerHTML=today;
+
+</script>
+
+</center>
+</body></html>
